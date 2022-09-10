@@ -8,7 +8,7 @@ import { Navigate } from 'react-router-dom';
 
 export default function PrivateRoute({
   component: Component,
-  redirectTo = '/',
+  redirectTo = '/login',
 }) {
   const { isLoggedIn, isRefreshing } = useAuth();
   const shouldRedirect = !isLoggedIn && !isRefreshing;

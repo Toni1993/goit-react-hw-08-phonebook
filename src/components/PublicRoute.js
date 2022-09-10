@@ -6,6 +6,7 @@ export default function PublicRoute({
   redirectTo = '/',
   component: Component,
 }) {
+  console.log(14);
   const { isLoggedIn } = useAuth();
   const shouldRedirect = isLoggedIn && restricted;
   return shouldRedirect ? <Navigate to={redirectTo} /> : Component;

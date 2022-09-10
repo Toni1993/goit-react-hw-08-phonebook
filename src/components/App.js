@@ -35,7 +35,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route
               index
-              element={<PublicRoute component={<ContactsPage />} />}
+              element={<PrivateRoute component={<ContactsPage />} />}
             />
 
             <Route
