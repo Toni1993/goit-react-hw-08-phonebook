@@ -63,11 +63,11 @@ export default function RegisterPage() {
 
   return (
     <div style={styles.formWrapper}>
-      <h1>Страница регистрации</h1>
+      <h1>REGISTRATION</h1>
 
       <form onSubmit={handleSubmit} style={styles.form} autoComplete="off">
         <label style={styles.label}>
-          <div>Имя</div>
+          <div>Name</div>
           <input
             className="input"
             type="text"
@@ -78,7 +78,7 @@ export default function RegisterPage() {
         </label>
 
         <label style={styles.label}>
-          <div>Почта</div>
+          <div>Email</div>
           <input
             className="input"
             type="email"
@@ -90,7 +90,7 @@ export default function RegisterPage() {
         </label>
 
         <label style={styles.label}>
-          <div>Пароль</div>
+          <div>Password</div>
           <input
             className="input"
             type="password"
@@ -101,7 +101,7 @@ export default function RegisterPage() {
         </label>
 
         <button className="button" type="submit">
-          Зарегистрироваться
+          Sign up
         </button>
       </form>
       <div style={styles.message}>{message}</div>

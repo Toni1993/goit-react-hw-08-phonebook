@@ -47,7 +47,7 @@ export default function LoginPage() {
   const handleSubmit = e => {
     e.preventDefault();
     if (!passwordValid || !emailValid) {
-      setMessage('Вспоминай, это было не так давно.');
+      setMessage("Remember, it wasn't that long ago.");
       return;
     }
     dispatch(authOperations.logIn({ email, password }));
@@ -58,11 +58,11 @@ export default function LoginPage() {
 
   return (
     <div style={styles.formWrapper}>
-      <h1>Страница логина</h1>
+      <h1>LOGIN</h1>
 
       <form onSubmit={handleSubmit} style={styles.form} autoComplete="off">
         <label style={styles.label}>
-          <div>Почта</div>
+          <div>Email</div>
           <input
             className="input"
             type="email"
@@ -73,7 +73,7 @@ export default function LoginPage() {
         </label>
 
         <label style={styles.label}>
-          <div>Пароль</div>
+          <div>Password</div>
           <input
             className="input"
             type="password"
@@ -84,7 +84,7 @@ export default function LoginPage() {
         </label>
 
         <button className="button" type="submit">
-          Войти
+          Sign in
         </button>
       </form>
       <div style={styles.message}>{message}</div>

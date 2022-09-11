@@ -18,8 +18,8 @@ const Link = styled(NavLink)`
 export default function AuthNav() {
   return (
     <div>
-      <Link to="/register">Регистрация</Link>
-      <Link to="/login">Логин</Link>
+      <Link to="/register">Registration</Link>
+      <Link to="/login">Login</Link>
     </div>
   );
 }

@@ -7,6 +7,7 @@ const styles = {
   name: {
     fontWeight: 700,
     marginRight: 12,
+    color: '#2980b9',
   },
 };
 
@@ -19,15 +20,17 @@ export default function UserMenu() {
   };
 
   return (
-    <Box display="flex" alignItems="center">
-      <span style={styles.name}>Добро пожаловать, {user.name}</span>
+    <>
+      <span>
+        Welcome <span style={styles.name}>{user.name}</span>
+      </span>
       <button
         className="button"
         type="button"
         onClick={() => dispatch(authOperations.logOut())}
       >
-        Выйти
+        Logout
       </button>
-    </Box>
+    </>
   );
 }
